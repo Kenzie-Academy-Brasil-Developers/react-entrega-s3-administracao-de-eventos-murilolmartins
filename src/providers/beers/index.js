@@ -10,11 +10,13 @@ export function BeersProvider({ children }) {
   function nextPage() {
     if (page < 4) {
       setPage(page + 1);
+      window.scrollTo(0, 0);
     }
   }
   function returnPage() {
     if (page > 1) {
       setPage(page - 1);
+      window.scrollTo(0, 0);
     }
   }
 
